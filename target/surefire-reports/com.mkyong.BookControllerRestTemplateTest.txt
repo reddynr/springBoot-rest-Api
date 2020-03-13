@@ -1,0 +1,40 @@
+-------------------------------------------------------------------------------
+Test set: com.mkyong.BookControllerRestTemplateTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 8, Errors: 0, Skipped: 0, Time elapsed: 8.584 s <<< FAILURE! - in com.mkyong.BookControllerRestTemplateTest
+find_allBook_OK(com.mkyong.BookControllerRestTemplateTest)  Time elapsed: 0.648 s  <<< FAILURE!
+java.lang.AssertionError: expected:<200 OK> but was:<404 NOT_FOUND>
+	at com.mkyong.BookControllerRestTemplateTest.find_allBook_OK(BookControllerRestTemplateTest.java:75)
+
+save_book_OK(com.mkyong.BookControllerRestTemplateTest)  Time elapsed: 0.029 s  <<< FAILURE!
+java.lang.AssertionError: expected:<201 CREATED> but was:<404 NOT_FOUND>
+	at com.mkyong.BookControllerRestTemplateTest.save_book_OK(BookControllerRestTemplateTest.java:103)
+
+patch_bookAuthor_OK(com.mkyong.BookControllerRestTemplateTest)  Time elapsed: 0.015 s  <<< FAILURE!
+java.lang.AssertionError: expected:<200 OK> but was:<404 NOT_FOUND>
+	at com.mkyong.BookControllerRestTemplateTest.patch_bookAuthor_OK(BookControllerRestTemplateTest.java:142)
+
+update_book_OK(com.mkyong.BookControllerRestTemplateTest)  Time elapsed: 0.012 s  <<< FAILURE!
+java.lang.AssertionError: expected:<200 OK> but was:<404 NOT_FOUND>
+	at com.mkyong.BookControllerRestTemplateTest.update_book_OK(BookControllerRestTemplateTest.java:122)
+
+patch_bookPrice_405(com.mkyong.BookControllerRestTemplateTest)  Time elapsed: 0.013 s  <<< FAILURE!
+java.lang.AssertionError: expected:<405 METHOD_NOT_ALLOWED> but was:<404 NOT_FOUND>
+	at com.mkyong.BookControllerRestTemplateTest.patch_bookPrice_405(BookControllerRestTemplateTest.java:162)
+
+delete_book_OK(com.mkyong.BookControllerRestTemplateTest)  Time elapsed: 0.014 s  <<< FAILURE!
+java.lang.AssertionError: expected:<200 OK> but was:<404 NOT_FOUND>
+	at com.mkyong.BookControllerRestTemplateTest.delete_book_OK(BookControllerRestTemplateTest.java:177)
+
+find_bookIdNotFound_404(com.mkyong.BookControllerRestTemplateTest)  Time elapsed: 0.025 s  <<< FAILURE!
+java.lang.AssertionError: 
+message
+Expected: Book id not found : 5
+     got: No message available
+
+	at com.mkyong.BookControllerRestTemplateTest.find_bookIdNotFound_404(BookControllerRestTemplateTest.java:89)
+
+find_bookId_OK(com.mkyong.BookControllerRestTemplateTest)  Time elapsed: 0.01 s  <<< FAILURE!
+java.lang.AssertionError: expected:<200 OK> but was:<404 NOT_FOUND>
+	at com.mkyong.BookControllerRestTemplateTest.find_bookId_OK(BookControllerRestTemplateTest.java:53)
+
